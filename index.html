@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>College Mantra &mdash; links</title>
+<meta name="description" content="Everything College Mantra offers, in one place." />
+<meta name="theme-color" content="#120A1F" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="College Mantra &mdash; links" />
+<meta property="og:description" content="One link, everything College Mantra." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --void:#120A1F;
+    --ink:#1B0F2E;
+    --ink-hi:#2A1A45;
+    --paper:#F1EAFC;
+    --dim:#9A8CB8;
+    --flare:#FF2D77;
+    --pulse:#35E0D0;
+
+    --line:rgba(241,234,252,.10);
+    --line-hi:rgba(241,234,252,.22);
+
+    --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+
+    --gutter:22px;
+    --spine-x:16px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+
+  html{-webkit-text-size-adjust:100%}
+
+  body{
+    margin:0;
+    min-height:100svh;
+    background:var(--void);
+    color:var(--paper);
+    font-family:var(--display);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  .field{
+    position:fixed;
+    inset:-20vh -20vw;
+    z-index:0;
+    pointer-events:none;
+    background:
+      radial-gradient(46vw 46vw at 18% 8%, rgba(255,45,119,.20), transparent 62%),
+      radial-gradient(52vw 52vw at 88% 78%, rgba(53,224,208,.13), transparent 64%),
+      radial-gradient(70vw 60vw at 50% 50%, rgba(90,42,150,.22), transparent 70%);
+    filter:blur(10px);
+    animation:drift 26s ease-in-out infinite alternate;
+  }
+  @keyframes drift{
+    from{transform:translate3d(0,0,0) scale(1)}
+    to{transform:translate3d(-3%,2%,0) scale(1.07)}
+  }
+
+  .grain{
+    position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.28;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    mix-blend-mode:overlay;
+  }
+
+  .wrap{
+    position:relative;z-index:2;
+    width:100%;max-width:520px;
+    margin:0 auto;
+    padding:clamp(38px,9vw,72px) var(--gutter) 56px;
+  }
+
+  .head{padding-left:34px}
+
+  .eyebrow{
+    display:flex;align-items:center;gap:9px;
+    font-family:var(--mono);font-size:11.5px;font-weight:500;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--dim);
+    margin:0 0 22px;
+  }
+  .dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--pulse);
+    box-shadow:0 0 0 0 rgba(53,224,208,.55);
+    animation:beat 2.4s ease-out infinite;
+  }
+  @keyframes beat{
+    0%{box-shadow:0 0 0 0 rgba(53,224,208,.5)}
+    70%{box-shadow:0 0 0 9px rgba(53,224,208,0)}
+    100%{box-shadow:0 0 0 0 rgba(53,224,208,0)}
+  }
+
+  h1{
+    font-size:clamp(38px,11.5vw,54px);
+    font-weight:800;
+    line-height:.94;
+    letter-spacing:-.035em;
+    margin:0 0 18px;
+  }
+  h1 em{
+    font-style:normal;
+    color:transparent;
+    -webkit-text-stroke:1.4px var(--line-hi);
+    display:block;
+  }
+
+  .intro{
+    font-size:15.5px;line-height:1.55;color:var(--dim);
+    max-width:33ch;margin:0 0 40px;font-weight:500;
+  }
+  .intro b{color:var(--paper);font-weight:700}
+
+  .stack{
+    position:relative;
+    padding-left:34px;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .stack::before{
+    content:"";position:absolute;
+    left:var(--spine-x);top:14px;bottom:14px;width:1px;
+    background:linear-gradient(180deg,transparent,var(--line-hi) 12%,var(--line-hi) 88%,transparent);
+  }
+  .stack::after{
+    content:"";position:absolute;
+    left:calc(var(--spine-x) - 1px);width:3px;height:15%;
+    border-radius:3px;
+    background:linear-gradient(180deg,transparent,var(--flare),var(--pulse),transparent);
+    filter:blur(1px);
+    animation:travel 7s cubic-bezier(.5,0,.5,1) infinite;
+  }
+  @keyframes travel{
+    0%{top:-18%;opacity:0}
+    12%{opacity:1}
+    88%{opacity:1}
+    100%{top:104%;opacity:0}
+  }
+
+  .card{
+    position:relative;
+    display:grid;
+    grid-template-columns:46px 1fr 22px;
+    gap:14px;align-items:center;
+    padding:16px 16px 16px 15px;
+    border:1px solid var(--line);
+    border-radius:15px;
+    background:linear-gradient(180deg,rgba(241,234,252,.055),rgba(241,234,252,.018));
+    text-decoration:none;color:inherit;
+    isolation:isolate;
+    transition:transform .32s cubic-bezier(.2,.8,.3,1),border-color .32s,background .32s;
+  }
+  .card::before{
+    content:"";position:absolute;
+    left:-19px;top:50%;margin-top:-3.5px;
+    width:7px;height:7px;border-radius:50%;
+    background:var(--ink-hi);
+    border:1px solid var(--line-hi);
+    transition:background .3s,border-color .3s,transform .3s;
+  }
+  .card::after{
+    content:"";position:absolute;
+    left:-12px;top:50%;width:12px;height:1px;
+    background:var(--line);
+    transition:background .3s;
+  }
+
+  .card:hover,.card:focus-visible{
+    transform:translateX(5px);
+    border-color:var(--line-hi);
+    background:linear-gradient(180deg,rgba(241,234,252,.10),rgba(241,234,252,.03));
+  }
+  .card:hover::before,.card:focus-visible::before{
+    background:var(--flare);border-color:var(--flare);
+    transform:scale(1.35);
+    box-shadow:0 0 12px rgba(255,45,119,.75);
+  }
+  .card:hover::after,.card:focus-visible::after{background:var(--flare)}
+  .card:focus-visible{outline:2px solid var(--pulse);outline-offset:3px}
+  .card:active{transform:translateX(5px) scale(.988)}
+
+  .mark{
+    width:46px;height:46px;border-radius:12px;
+    object-fit:cover;display:block;
+    background:var(--ink-hi);
+    border:1px solid var(--line);
+    transition:filter .32s,border-color .32s,transform .32s cubic-bezier(.2,.8,.3,1);
+  }
+  .card:hover .mark,.card:focus-visible .mark{
+    filter:saturate(1.15) brightness(1.08);
+    border-color:var(--line-hi);
+    transform:scale(1.05);
+  }
+
+  .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+  .name{font-size:16.5px;font-weight:700;letter-spacing:-.018em;line-height:1.15}
+
+  .tag{
+    font-family:var(--mono);font-size:9.5px;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;
+    padding:3px 7px;border-radius:5px;white-space:nowrap;
+  }
+  .t-live{background:rgba(53,224,208,.14);color:var(--pulse)}
+  .t-order{background:rgba(255,45,119,.16);color:#FF7BA5}
+  .t-early{background:rgba(241,234,252,.10);color:var(--dim)}
+
+  .desc{font-size:13.5px;line-height:1.42;color:var(--dim);font-weight:500;margin:0}
+
+  .go{
+    font-family:var(--mono);font-size:16px;color:var(--dim);
+    justify-self:end;
+    transition:transform .32s cubic-bezier(.2,.8,.3,1),color .32s;
+  }
+  .card:hover .go,.card:focus-visible .go{transform:translate(3px,-3px);color:var(--flare)}
+
+  .foot{
+    margin-top:44px;padding-left:34px;
+    border-top:1px solid var(--line);
+    padding-top:26px;
+  }
+  .foot__label{
+    font-family:var(--mono);font-size:10.5px;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;color:rgba(154,140,184,.7);
+    margin:0 0 14px;
+  }
+  .socials{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;padding:0}
+  .socials a{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 13px 9px 11px;
+    border:1px solid var(--line);border-radius:999px;
+    background:rgba(241,234,252,.03);
+    color:var(--dim);text-decoration:none;
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;
+    transition:color .28s,border-color .28s,background .28s,transform .28s cubic-bezier(.2,.8,.3,1);
+  }
+  .socials svg{
+    width:15px;height:15px;flex:none;
+    fill:none;stroke:currentColor;stroke-width:1.7;
+    stroke-linecap:round;stroke-linejoin:round;
+  }
+  .socials a:hover,.socials a:focus-visible{
+    color:var(--paper);
+    border-color:var(--flare);
+    background:rgba(255,45,119,.10);
+    transform:translateY(-2px);
+  }
+  .socials a:focus-visible{outline:2px solid var(--pulse);outline-offset:3px}
+  .foot__note{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:rgba(154,140,184,.45);margin:0;
+  }
+
+  .rise{opacity:0;transform:translateY(14px);animation:rise .8s cubic-bezier(.2,.8,.3,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{
+      animation-duration:.001ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:.001ms !important;
+    }
+    .rise{opacity:1;transform:none}
+    .stack::after{display:none}
+  }
+
+  @media (max-width:380px){
+    :root{--gutter:16px}
+    .card{grid-template-columns:40px 1fr 18px;gap:12px;padding:14px}
+    .mark{width:40px;height:40px;font-size:12px}
+  }
+
+  .mark.mono{
+    display:grid;place-items:center;
+    font-family:var(--mono);font-size:14px;font-weight:700;letter-spacing:.02em;
+    color:#120A1F;background:linear-gradient(145deg,#6C8BFF,#35E0D0);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.35);
+  }
+  .empty{
+    padding:28px 22px;border:1px dashed var(--line-hi);border-radius:15px;
+    color:var(--dim);font-size:13.5px;line-height:1.6;
+  }
+  .empty b{color:var(--paper)}
+</style>
+</head>
+<body>
+
+<div class="field" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="wrap">
+  <header class="head">
+    <p class="eyebrow rise" style="animation-delay:.05s"><span class="dot"></span>College Mantra</p>
+    <h1 class="rise" style="animation-delay:.12s">College<br />Mantra<em>everything, one place</em></h1>
+    <p class="intro rise" style="animation-delay:.2s">
+      Every link related to College Mantra &mdash; pick one.
+    </p>
+  </header>
+
+  <nav class="stack" id="nav-links" aria-label="Links">
+    <div class="rise" style="animation-delay:.3s" id="loading" aria-hidden="true"></div>
+  </nav>
+
+  <footer class="foot rise" style="animation-delay:.5s">
+    <p class="foot__note">Updated as links go live</p>
+  </footer>
+</main>
+
+<script>
+function esc(s){
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function initials(name){
+  return String(name).trim().split(/\s+/).slice(0,2).map(w=>w[0]||"").join("").toUpperCase();
+}
+function cardHTML(item, i){
+  var delay = (0.30 + i*0.07).toFixed(2);
+  var tag = item.tag || "Live";
+  var desc = item.desc || "";
+  var name = item.name || "Untitled";
+  var url = item.url || "#";
+  var mono = '<span class="mark mono" aria-hidden="true">' + esc(initials(name)) + '</span>';
+  var img = item.image
+    ? '<img class="mark" src="' + esc(item.image) + '" alt="' + esc(name) + '" width="180" height="180" loading="lazy" decoding="async" onerror="this.outerHTML=' + JSON.stringify(mono).replace(/"/g,"&quot;") + '" />'
+    : mono;
+  return '<a class="card rise" style="animation-delay:' + delay + 's" href="' + esc(url) + '" target="_blank" rel="noopener">'
+    + img
+    + '<span><span class="top"><span class="name">' + esc(name) + '</span>'
+    + '<span class="tag t-live">' + esc(tag) + '</span></span>'
+    + '<span class="desc">' + esc(desc) + '</span></span>'
+    + '<span class="go" aria-hidden="true">&#8599;</span></a>';
+}
+async function loadLinks(){
+  var wrap = document.getElementById("nav-links");
+  var data = [];
+  try {
+    var res = await fetch("links.json", {cache:"no-store"});
+    data = await res.json();
+  } catch(e) { data = []; }
+  if (!Array.isArray(data) || data.length === 0){
+    wrap.innerHTML = '<div class="empty rise" style="animation-delay:.3s">'
+      + '<b>Links coming soon.</b><br />This page updates automatically &mdash; check back shortly.'
+      + '</div>';
+    return;
+  }
+  wrap.innerHTML = data.map(cardHTML).join("");
+}
+loadLinks();
+</script>
+
+</body>
+</html>
