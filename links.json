@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "name": "Admission Desk \u2014 Master Dashboard",
+    "url": "https://shivee999.github.io/collegemantra/",
+    "tag": "Password: PAISAN",
+    "desc": "Every College Mantra chat, artifact, tool and repo compiled \u2014 10 sections, 50 cards. Built yesterday.",
+    "image": ""
+  },
+  {
+    "name": "Marketing Playbook",
+    "url": "PENDING_UPLOAD",
+    "tag": "Awaiting file",
+    "desc": "574 unique hooks across Medical/Management/Engineering/Law streams, 8-platform play matrix. File too content-dense to relay safely \u2014 needs direct upload.",
+    "image": ""
+  },
+  {
+    "name": "AI Tooling Dashboard",
+    "url": "PENDING_UPLOAD",
+    "tag": "Awaiting file",
+    "desc": "Chrome DevTools 150 MCP surface + Google Flow / Gemini Omni, verified installs and tool counts.",
+    "image": ""
+  },
+  {
+    "name": "Claude Skills Catalogue (PDF)",
+    "url": "PENDING_UPLOAD",
+    "tag": "Awaiting file",
+    "desc": "204 skills across 16 categories, with a suggested use per venture. Compiled 11 Aug 2026.",
+    "image": ""
+  },
+  {
+    "name": "pm-skills",
+    "url": "https://github.com/Shivee999/pm-skills",
+    "tag": "Repo",
+    "desc": "PM Skills Marketplace: 100+ agentic skills, commands and plugins for discovery, strategy, execution, launch and growth.",
+    "image": ""
+  },
+  {
+    "name": "awesome-claude-code-toolkit",
+    "url": "https://github.com/Shivee999/awesome-claude-code-toolkit",
+    "tag": "Repo",
+    "desc": "135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries.",
+    "image": ""
+  },
+  {
+    "name": "paperclip",
+    "url": "https://github.com/Shivee999/paperclip",
+    "tag": "Repo",
+    "desc": "Open-source app for managing agents at work.",
+    "image": ""
+  }
+]
