@@ -284,6 +284,9 @@
     color:var(--dim);font-size:13.5px;line-height:1.6;
   }
   .empty b{color:var(--paper)}
+  .card.pending{opacity:.55;border-style:dashed;cursor:default}
+  .tag.t-pending{background:rgba(255,45,119,.10);color:#FF7BA5}
+  .pending-mark{color:var(--dim)}
 </style>
 </head>
 <body>
@@ -322,15 +325,22 @@ function cardHTML(item, i){
   var desc = item.desc || "";
   var name = item.name || "Untitled";
   var url = item.url || "#";
+  var pending = !url || url === "PENDING_UPLOAD";
   var mono = '<span class="mark mono" aria-hidden="true">' + esc(initials(name)) + '</span>';
   var img = item.image
     ? '<img class="mark" src="' + esc(item.image) + '" alt="' + esc(name) + '" width="180" height="180" loading="lazy" decoding="async" onerror="this.outerHTML=' + JSON.stringify(mono).replace(/"/g,"&quot;") + '" />'
     : mono;
-  return '<a class="card rise" style="animation-delay:' + delay + 's" href="' + esc(url) + '" target="_blank" rel="noopener">'
-    + img
+  var tagClass = pending ? "tag t-pending" : "tag t-live";
+  var body = img
     + '<span><span class="top"><span class="name">' + esc(name) + '</span>'
-    + '<span class="tag t-live">' + esc(tag) + '</span></span>'
-    + '<span class="desc">' + esc(desc) + '</span></span>'
+    + '<span class="' + tagClass + '">' + esc(tag) + '</span></span>'
+    + '<span class="desc">' + esc(desc) + '</span></span>';
+  if (pending){
+    return '<div class="card pending rise" style="animation-delay:' + delay + 's" aria-disabled="true">'
+      + body + '<span class="go pending-mark" aria-hidden="true">&#8230;</span></div>';
+  }
+  return '<a class="card rise" style="animation-delay:' + delay + 's" href="' + esc(url) + '" target="_blank" rel="noopener">'
+    + body
     + '<span class="go" aria-hidden="true">&#8599;</span></a>';
 }
 async function loadLinks(){
