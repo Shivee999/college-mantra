@@ -1,30 +1,9 @@
 [
   {
-    "name": "Admission Desk \u2014 Master Dashboard",
+    "name": "Admission Desk — Master Dashboard",
     "url": "https://shivee999.github.io/collegemantra/",
     "tag": "Password: PAISAN",
-    "desc": "Every College Mantra chat, artifact, tool and repo compiled \u2014 10 sections, 50 cards. Built yesterday.",
-    "image": ""
-  },
-  {
-    "name": "Marketing Playbook",
-    "url": "PENDING_UPLOAD",
-    "tag": "Awaiting file",
-    "desc": "574 unique hooks across Medical/Management/Engineering/Law streams, 8-platform play matrix. File too content-dense to relay safely \u2014 needs direct upload.",
-    "image": ""
-  },
-  {
-    "name": "AI Tooling Dashboard",
-    "url": "PENDING_UPLOAD",
-    "tag": "Awaiting file",
-    "desc": "Chrome DevTools 150 MCP surface + Google Flow / Gemini Omni, verified installs and tool counts.",
-    "image": ""
-  },
-  {
-    "name": "Claude Skills Catalogue (PDF)",
-    "url": "PENDING_UPLOAD",
-    "tag": "Awaiting file",
-    "desc": "204 skills across 16 categories, with a suggested use per venture. Compiled 11 Aug 2026.",
+    "desc": "Every College Mantra chat, artifact, tool and repo compiled — 10 sections, 50 cards. Built yesterday.",
     "image": ""
   },
   {
@@ -53,13 +32,6 @@
     "url": "https://www.instagram.com/vineett.__",
     "tag": "Founder",
     "desc": "Founder, College Mantra. On Instagram.",
-    "image": ""
-  },
-  {
-    "name": "Co-founder",
-    "url": "PENDING_UPLOAD",
-    "tag": "Handle needed",
-    "desc": "Awaiting the co-founder's own Instagram handle \u2014 the link sent was a duplicate of the founder's.",
     "image": ""
   }
 ]
