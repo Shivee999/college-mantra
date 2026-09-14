@@ -3,28 +3,7 @@
     "name": "Admission Desk — Master Dashboard",
     "url": "https://shivee999.github.io/collegemantra/",
     "tag": "Password: PAISAN",
-    "desc": "Every College Mantra chat, artifact, tool and repo compiled — 10 sections, 50 cards. Built yesterday.",
-    "image": ""
-  },
-  {
-    "name": "pm-skills",
-    "url": "https://github.com/Shivee999/pm-skills",
-    "tag": "Repo",
-    "desc": "PM Skills Marketplace: 100+ agentic skills, commands and plugins for discovery, strategy, execution, launch and growth.",
-    "image": ""
-  },
-  {
-    "name": "awesome-claude-code-toolkit",
-    "url": "https://github.com/Shivee999/awesome-claude-code-toolkit",
-    "tag": "Repo",
-    "desc": "135 agents, 35 curated skills, 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 14 MCP configs, 26 companion apps, 52 ecosystem entries.",
-    "image": ""
-  },
-  {
-    "name": "paperclip",
-    "url": "https://github.com/Shivee999/paperclip",
-    "tag": "Repo",
-    "desc": "Open-source app for managing agents at work.",
+    "desc": "Every College Mantra chat, artifact, tool and repo compiled — 8 sections, 21 cards, stripped of everything that wasn't actually built.",
     "image": ""
   },
   {
